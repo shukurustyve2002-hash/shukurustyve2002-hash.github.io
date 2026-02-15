@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shukuru Styve - CV Professionnel</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="cv-page">
+    <!-- Navigation mini pour le CV -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <span class="gradient-text">S.Styve</span>
+            </a>
+            <div class="d-flex align-items-center gap-3">
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="bi bi-sun-fill sun-icon"></i>
+                    <i class="bi bi-moon-fill moon-icon"></i>
+                </button>
+                <a href="index.html" class="btn-outline-gradient-sm">
+                    <i class="bi bi-arrow-left"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5 mt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10" data-aos="fade-up">
+                <!-- En-tête du CV avec photo -->
+                <div class="cv-header gradient-bg p-5 rounded-4 mb-4 text-white position-relative overflow-hidden">
+                    <div class="position-relative z-index-1">
+                        <div class="row align-items-center">
+                            <div class="col-md-2 col-4 mb-3 mb-md-0">
+                                <!-- Photo de profil pour CV -->
+                                <div class="cv-photo-wrapper">
+                                    <img src="image/photo.jpg" 
+                                         alt="Shukuru Styve" 
+                                         class="cv-photo rounded-circle border border-3 border-white shadow">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h1 class="display-4 fw-bold mb-3">Shukuru Styve</h1>
+                                <h2 class="h4 mb-4">Développeur Full-Stack</h2>
+                                <div class="d-flex flex-wrap gap-3">
+                                    <span><i class="bi bi-envelope me-2"></i>shukurustyve2002@gmail.com</span>
+                                    <span><i class="bi bi-phone me-2"></i>+243 975 919 978</span>
+                                    <span><i class="bi bi-geo-alt me-2"></i>Bukavu, RD Congo</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4 text-md-end mt-4 mt-md-0">
+                                <div class="d-flex flex-column gap-2">
+                                    <a href="#" class="btn btn-light btn-lg" onclick="window.print()">
+                                        <i class="bi bi-printer me-2"></i>Imprimer
+                                    </a>
+                                    <a href="#" class="btn btn-outline-light btn-lg">
+                                        <i class="bi bi-download me-2"></i>Télécharger PDF
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Éléments décoratifs -->
+                    <div class="position-absolute top-0 end-0 opacity-10">
+                        <i class="bi bi-code-slash display-1"></i>
+                    </div>
+                </div>
+                
+                <!-- Contenu du CV -->
+                <div class="row g-4">
+                    <!-- Colonne gauche -->
+                    <div class="col-md-4">
+                        <!-- Profil -->
+                        <div id="profil" class="cv-section p-4 rounded-3 mb-4" data-aos="fade-right" data-aos-delay="100">
+                            <h3 class="h5 fw-bold mb-3">
+                                <i class="bi bi-person-circle gradient-text me-2"></i>
+                                <span class="gradient-text-primary">Profil</span>
+                            </h3>
+                            <p class="small">
+                                Développeur Full-Stack passionné avec 5+ ans d'expérience dans la création 
+                                d'applications web et mobiles. Spécialisé dans les solutions de gestion 
+                                d'entreprise avec une approche centrée sur l'utilisateur.
+                            </p>
+                        </div>
+                        
+                        <!-- Compétences -->
+                        <div id="competences" class="cv-section p-4 rounded-3 mb-4" data-aos="fade-right" data-aos-delay="200">
+                            <h3 class="h5 fw-bold mb-3">
+                                <i class="bi bi-code-square gradient-text me-2"></i>
+                                <span class="gradient-text-primary">Compétences techniques</span>
+                            </h3>
+                            <div class="skill-tags">
+                                <span class="badge-gradient-tech mb-2">HTML5/CSS3</span>
+                                <span class="badge-gradient-tech mb-2">JavaScript (ES6+)</span>
+                                <span class="badge-gradient-tech mb-2">React.js</span>
+                                <span class="badge-gradient-tech mb-2">Node.js</span>
+                                <span class="badge-gradient-tech mb-2">Python</span>
+                                <span class="badge-gradient-tech mb-2">Django</span>
+                                <span class="badge-gradient-tech mb-2">MySQL</span>
+                                <span class="badge-gradient-tech mb-2">MongoDB</span>
+                                <span class="badge-gradient-tech mb-2">Git/GitHub</span>
+                                <span class="badge-gradient-tech mb-2">Docker</span>
+                                <span class="badge-gradient-tech mb-2">REST APIs</span>
+                                <span class="badge-gradient-tech mb-2">Bootstrap</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Langues -->
+                        <div id="langues" class="cv-section p-4 rounded-3 mb-4" data-aos="fade-right" data-aos-delay="300">
+                            <h3 class="h5 fw-bold mb-3">
+                                <i class="bi bi-translate gradient-text me-2"></i>
+                                <span class="gradient-text-primary">Langues</span>
+                            </h3>
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span>Français</span>
+                                    <span class="gradient-text">Courant</span>
+                                </div>
+                                <div class="progress" style="height: 6px;">
+                                    <div class="progress-bar gradient-bg" style="width: 100%"></div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span>Anglais</span>
+                                    <span class="gradient-text">Professionnel</span>
+                                </div>
+                                <div class="progress" style="height: 6px;">
+                                    <div class="progress-bar gradient-bg" style="width: 80%"></div>
+                                </div>
+                            </div>
+                               <div class="mb-3">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span>Espagnol</span>
+                                    <span class="gradient-text">Professionnel</span>
+                                </div>
+                                <div class="progress" style="height: 6px;">
+                                    <div class="progress-bar gradient-bg" style="width: 60%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span>Swahili</span>
+                                    <span class="gradient-text">Maternel</span>
+                                </div>
+                                <div class="progress" style="height: 6px;">
+                                    <div class="progress-bar gradient-bg" style="width: 100%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Centres d'intérêt -->
+                        <div class="cv-section p-4 rounded-3" data-aos="fade-right" data-aos-delay="400">
+                            <h3 class="h5 fw-bold mb-3">
+                                <i class="bi bi-heart gradient-text me-2"></i>
+                                <span class="gradient-text-primary">Centres d'intérêt</span>
+                            </h3>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="interest-item"><i class="bi bi-book me-1"></i>Lecture tech</span>
+                                <span class="interest-item"><i class="bi bi-cup-hot me-1"></i>Open source</span>
+                                <span class="interest-item"><i class="bi bi-music-note me-1"></i>Musique</span>
+                                <span class="interest-item"><i class="bi bi-bicycle me-1"></i>Sport</span>
+                                <span class="interest-item"><i class="bi bi-bicycle me-1"></i>Design Graphique</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Colonne droite -->
+                    <div class="col-md-8">
+                        <!-- Expérience professionnelle -->
+                        <div id="experience" class="cv-section p-4 rounded-3 mb-4" data-aos="fade-left" data-aos-delay="100">
+                            <h3 class="h5 fw-bold mb-4">
+                                <i class="bi bi-briefcase gradient-text me-2"></i>
+                                <span class="gradient-text-primary">Expérience professionnelle</span>
+                            </h3>
+                            
+                            <div class="timeline-item mb-4">
+                                <div class="d-flex flex-wrap justify-content-between align-items-center mb-2">
+                                    <h4 class="h6 fw-bold mb-0">Développeur Full-Stack Freelance</h4>
+                                    <span class="badge-gradient">2023 - Présent</span>
+                                </div>
+                                <p class="small text-secondary mb-2">Développement d'applications de gestion pour diverses entreprises</p>
+                                <ul class="small">
+                                    <li>Création d'un logiciel de gestion scolaire utilisé par 3 écoles secondaires</li>
+                                    <li>Développement d'une application de gestion de stock pour 2 commerces locaux</li>
+                                    <li>Maintenance et optimisation d'applications existantes (performance +30%)</li>
+                                    <li>Collaboration avec des clients pour comprendre leurs besoins et proposer des solutions adaptées</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="d-flex flex-wrap justify-content-between align-items-center mb-2">
+                                    <h4 class="h6 fw-bold mb-0">Stage Développeur Web</h4>
+                                    <span class="badge-gradient">2022 - 2023</span>
+                                </div>
+                                <p class="small text-secondary mb-2">Tech Solutions SARL, Bukavu</p>
+                                <ul class="small">
+                                    <li>Participation au développement d'une application de gestion hospitalière</li>
+                                    <li>Création d'interfaces responsives avec React et Bootstrap</li>
+                                    <li>Collaboration sur des projets avec une équipe de 5 développeurs</li>
+                                    <li>Mise en place de tests unitaires et documentation technique</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Formation -->
+                        <div id="formation" class="cv-section p-4 rounded-3 mb-4" data-aos="fade-left" data-aos-delay="200">
+                            <h3 class="h5 fw-bold mb-4">
+                                <i class="bi bi-mortarboard gradient-text me-2"></i>
+                                <span class="gradient-text-primary">Formation</span>
+                            </h3>
+                            
+                            <div class="timeline-item mb-4">
+                                <div class="d-flex flex-wrap justify-content-between align-items-center mb-2">
+                                    <div>
+                                        <h4 class="h6 fw-bold mb-1">Licence en Langues et Informatique </h4>
+                                        <p class="small text-secondary">Université Officielle de Bukavu</p>
+                                    </div>
+                                    <span class="badge-gradient">2021 - 2024</span>
+                                </div>
+                                <ul class="small">
+                                    <li>Mention : Assez Bien</li>
+                                    <li>Mémoire sur "Conception d'une application web de gestion de vente pour une maison de vente des ordinateurs"</li>
+                                </ul>
+                            </div>
+                              <div class="timeline-item mb-4">
+                                <div class="d-flex flex-wrap justify-content-between align-items-center mb-2">
+                                    <div>
+                                        <h4 class="h6 fw-bold mb-1">Master en Langues et Informatique </h4>
+                                        <p class="small text-secondary">Université Officielle de Bukavu</p>
+                                    </div>
+                                    <span class="badge-gradient">2024 - 2026</span>
+                                </div>
+                                <ul class="small">
+                                    <li>Mention : ****</li>
+                                    <li>Mémoire sur "*****************"</li>
+                                </ul>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="d-flex flex-wrap justify-content-between align-items-center mb-2">
+                                    <div>
+                                        <h4 class="h6 fw-bold mb-1">Certifications professionnelles</h4>
+                                        <p class="small text-secondary">OpenClassrooms, Coursera, Udemy</p>
+                                    </div>
+                                    <span class="badge-gradient">2022 - 2023</span>
+                                </div>
+                                <ul class="small">
+                                    <li>Développeur React - OpenClassrooms</li>
+                                    <li>Python pour le Data Science - Coursera</li>
+                                    <li>Git & GitHub Masterclass - Udemy</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Projets réalisés -->
+                        <div id="projet" class="cv-section p-4 rounded-3" data-aos="fade-left" data-aos-delay="300">
+                            <h3 class="h5 fw-bold mb-4">
+                                <i class="bi bi-code-slash gradient-text me-2"></i>
+                                <span class="gradient-text-primary">Projets clés</span>
+                            </h3>
+                            
+                            <div class="project-mini-card mb-3 p-3 rounded-3">
+                                <h4 class="h6 fw-bold mb-2">📚 Logiciel de gestion scolaire</h4>
+                                <p class="small text-secondary mb-2">
+                                    Application complète pour la gestion des notes, bulletins et statistiques.
+                                    Interface pour admin, professeurs et élèves.
+                                </p>
+                                <div class="d-flex gap-2">
+                                    <span class="badge-gradient-tech">React</span>
+                                    <span class="badge-gradient-tech">Django</span>
+                                    <span class="badge-gradient-tech">PostgreSQL</span>
+                                </div>
+                            </div>
+                            
+                            <div class="project-mini-card mb-3 p-3 rounded-3">
+                                <h4 class="h6 fw-bold mb-2">📦 Application de gestion de vente et stock</h4>
+                                <p class="small text-secondary mb-2">
+                                    Solution de gestion d'inventaire en temps réel avec alertes de stock,
+                                    rapports de performance et facturation.
+                                </p>
+                                <div class="d-flex gap-2">
+                                    <span class="badge-gradient-tech">Node.js</span>
+                                    <span class="badge-gradient-tech">Express</span>
+                                    <span class="badge-gradient-tech">MongoDB</span>
+                                </div>
+                            </div>
+                            
+                            <div class="project-mini-card mb-3 p-3 rounded-3">
+                                <h4 class="h6 fw-bold mb-2">🏥 Système de gestion hospitalière</h4>
+                                <p class="small text-secondary mb-2">
+                                    Gestion des patients, rendez-vous, dossiers médicaux,
+                                    prescriptions et facturation.
+                                </p>
+                                <div class="d-flex gap-2">
+                                    <span class="badge-gradient-tech">Python</span>
+                                    <span class="badge-gradient-tech">Django</span>
+                                    <span class="badge-gradient-tech">MySQL</span>
+                                </div>
+                            </div>
+                            
+                            <div class="project-mini-card p-3 rounded-3">
+                                <h4 class="h6 fw-bold mb-2">🚢 Application de gestion d'agence de dédouanement</h4>
+                                <p class="small text-secondary mb-2">
+                                    Suivi des colis, gestion des documents douaniers,
+                                    facturation et rapports d'activité.
+                                </p>
+                                <div class="d-flex gap-2">
+                                    <span class="badge-gradient-tech">Vue.js</span>
+                                    <span class="badge-gradient-tech">Laravel</span>
+                                    <span class="badge-gradient-tech">MySQL</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Signature (optionnel) -->
+                        <div class="row mt-4">
+                            <div class="col-12">
+                                <div class="cv-section p-4 rounded-3">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-8">
+                                            <p class="small text-secondary mb-0">
+                                                Je certifie sur l'honneur l'exactitude des informations fournies.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-4 text-md-end">
+                                            <p class="small mb-0 mt-2 fw-bold">Shukuru Styve</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+     <!-- Footer -->
+    <footer class="footer-gradient py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3 gradient-text">Shukuru Styve</h5>
+                    <p class="text-white-50 small">
+                        Développeur Full-Stack passionné, créant des solutions innovantes 
+                        pour les défis modernes.
+                    </p>
+                </div>
+                
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3 text-white">Navigation</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#profil" class="text-white-50 text-decoration-none">Profil</a></li>
+                        <li class="mb-2"><a href="#competences" class="text-white-50 text-decoration-none">Compétences</a></li>
+                        <li class="mb-2"><a href="#langues" class="text-white-50 text-decoration-none">Langues</a></li>
+                        <li class="mb-2"><a href="#experience" class="text-white-50 text-decoration-none">Expérience professionnelles</a></li>
+                        <li class="mb-2"><a href="#formation" class="text-white-50 text-decoration-none">Formation</a></li>
+                        <li class="mb-2"><a href="#projet" class="text-white-50 text-decoration-none">Projets</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3 text-white">Social</h5>
+                    <div class="social-links">
+                        <a href="#" class="social-icon me-3"><i class="bi bi-github fs-5"></i></a>
+                        <a href="#" class="social-icon me-3"><i class="bi bi-linkedin fs-5"></i></a>
+                        <a href="#" class="social-icon me-3"><i class="bi bi-twitter fs-5"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-envelope fs-5"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4 bg-white opacity-25">
+            
+            <div class="text-center">
+                <p class="small text-white-50 mb-0">
+                    © 2026 Shukuru Styve. Tous droits réservés.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/theme.js"></script>
+    <script>
+        // Initialisation AOS
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+</body>
+</html>
